@@ -1,0 +1,7 @@
+[Wed Aug 19 12:34:25.641959 2020] [php7:error] [pid 10063] [client 127.0.0.1:57336] script '/opt/lampp/htdocs/start.biz/product/readOne.php' not found or unable to stat
+[Wed Aug 19 12:34:55.875623 2020] [php7:error] [pid 18577] [client 127.0.0.1:57342] script '/opt/lampp/htdocs/start.biz/product/readone.php' not found or unable to stat
+[Wed Aug 19 12:36:07.248146 2020] [php7:error] [pid 18574] [client 127.0.0.1:57348] script '/opt/lampp/htdocs/start.biz/product/readone.php' not found or unable to stat
+[Wed Aug 19 12:36:16.561803 2020] [php7:error] [pid 18579] [client 127.0.0.1:57350] script '/opt/lampp/htdocs/start.biz/product/readOne.php' not found or unable to stat
+[Wed Aug 19 13:07:15.754163 2020] [php7:error] [pid 10064] [client 127.0.0.1:57668] script '/opt/lampp/htdocs/start.biz/product/readOne.php' not found or unable to stat
+[Wed Aug 19 13:07:52.210765 2020] [php7:error] [pid 18573] [client 127.0.0.1:57678] script '/opt/lampp/htdocs/start.biz/product/readone.php' not found or unable to stat
+[Wed Aug 19 13:09:35.847282 2020] [php7:error] [pid 10064] [client 127.0.0.1:57714] script '/opt/lampp/htdocs/start.biz/product/readOne.php' not found or unable to stat
