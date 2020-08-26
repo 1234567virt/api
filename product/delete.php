@@ -29,6 +29,10 @@ if ($product->delete()) {
     http_response_code(200);
 
     // сообщение пользователю 
-    echo json_encode(array("message" => "Товар был удалён."), JSON_UNESCAPED_UNICODE);
+    echo json_encode(array("message" => $product->id), JSON_UNESCAPED_UNICODE);
+}
+else{
+  http_response_code(404);
+     echo json_encode(array("message" => "Товар не был удалён."), JSON_UNESCAPED_UNICODE);
 }
 ?>

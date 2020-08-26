@@ -28,7 +28,7 @@ if ($product->product!=null) {
     // создание массива 
     $product_arr = array(
         "id" =>  $product->id,
-        "src" => $produst->src,
+        "src" => $product->src,
         "product" => $product->product,
         "code" => $product->code,
         "price" => $product->price,
