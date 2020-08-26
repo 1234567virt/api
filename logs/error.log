@@ -5,3 +5,8 @@
 [Wed Aug 19 13:07:15.754163 2020] [php7:error] [pid 10064] [client 127.0.0.1:57668] script '/opt/lampp/htdocs/start.biz/product/readOne.php' not found or unable to stat
 [Wed Aug 19 13:07:52.210765 2020] [php7:error] [pid 18573] [client 127.0.0.1:57678] script '/opt/lampp/htdocs/start.biz/product/readone.php' not found or unable to stat
 [Wed Aug 19 13:09:35.847282 2020] [php7:error] [pid 10064] [client 127.0.0.1:57714] script '/opt/lampp/htdocs/start.biz/product/readOne.php' not found or unable to stat
+[Thu Aug 20 12:42:50.012267 2020] [php7:error] [pid 4650] [client 127.0.0.1:42118] script '/opt/lampp/htdocs/start.biz/product/readOnly.php' not found or unable to stat
+[Thu Aug 20 12:43:02.923769 2020] [php7:error] [pid 4789] [client 127.0.0.1:42122] script '/opt/lampp/htdocs/start.biz/product/readOne.php' not found or unable to stat
+[Thu Aug 20 12:49:31.901787 2020] [php7:error] [pid 4657] [client 127.0.0.1:42412] script '/opt/lampp/htdocs/start.biz/product.php' not found or unable to stat
+[Thu Aug 20 16:56:03.223627 2020] [php7:error] [pid 3645] [client 127.0.0.1:57228] script '/opt/lampp/htdocs/start.biz/product/readOne.php' not found or unable to stat
+[Wed Aug 26 14:47:48.879419 2020] [php7:error] [pid 6332] [client 127.0.0.1:38964] script '/opt/lampp/htdocs/start.biz/phpadmin.php' not found or unable to stat

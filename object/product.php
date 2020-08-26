@@ -112,7 +112,7 @@ function update(){
             src=:src,
                 product = :product,
                 price = :price,
-                code = :description,
+                code = :code,
                 brendmarket = :brendmarket,
                 date=:date
             WHERE
