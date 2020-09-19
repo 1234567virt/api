@@ -29,13 +29,13 @@ if (
 ) {
 
     // устанавливаем значения свойств товара 
+    $product->src = $data->src;
     $product->product = $data->product;
     $product->price = $data->price;
-    $product->src = $data->src;
     $product->date = $data->date;
     $product->code = $data->code;
     $product->brendmarket=$data->brendmarket;
-
+    $product->url=$data->url;
     // создание товара 
     if($product->create()){
 

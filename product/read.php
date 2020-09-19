@@ -30,6 +30,7 @@ if ($num>0) {
             "product" => $product,
             "code" => $code,
             "brendmarket"=>$brendmarket,
+             "url"=>$url,
             "price" => $price,
             "date" => $date,
         );

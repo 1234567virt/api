@@ -31,6 +31,8 @@ if ($product->product!=null) {
         "src" => $product->src,
         "product" => $product->product,
         "code" => $product->code,
+        "brendmarket" =>$product->brendmarket,
+        "url" =>$product->url,
         "price" => $product->price,
         "date" => $product->date
     );

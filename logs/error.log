@@ -10,3 +10,6 @@
 [Thu Aug 20 12:49:31.901787 2020] [php7:error] [pid 4657] [client 127.0.0.1:42412] script '/opt/lampp/htdocs/start.biz/product.php' not found or unable to stat
 [Thu Aug 20 16:56:03.223627 2020] [php7:error] [pid 3645] [client 127.0.0.1:57228] script '/opt/lampp/htdocs/start.biz/product/readOne.php' not found or unable to stat
 [Wed Aug 26 14:47:48.879419 2020] [php7:error] [pid 6332] [client 127.0.0.1:38964] script '/opt/lampp/htdocs/start.biz/phpadmin.php' not found or unable to stat
+[Mon Aug 31 21:46:47.255384 2020] [php7:error] [pid 4036] [client 127.0.0.1:51646] script '/opt/lampp/htdocs/start.biz/phpmyadmin.php' not found or unable to stat
+[Mon Aug 31 21:46:58.906574 2020] [php7:error] [pid 4039] [client 127.0.0.1:51652] script '/opt/lampp/htdocs/start.biz/myadminphp.php' not found or unable to stat
+[Mon Aug 31 21:47:07.632006 2020] [php7:error] [pid 4040] [client 127.0.0.1:51654] script '/opt/lampp/htdocs/start.biz/myadmin.php' not found or unable to stat

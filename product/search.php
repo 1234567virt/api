@@ -37,10 +37,12 @@ if ($num>0) {
 
         $product_item=array(
             "id" => $id,
+            "src" => $src,
             "product" => $product,
             "code" => $code,
-            "price" => $price,
             "brendmarket" => $brendmarket,
+            "url"=>$url,
+            "price" => $price,
             "date" => $date
         );
 

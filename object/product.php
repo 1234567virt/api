@@ -13,7 +13,7 @@ class Product {
     public $brendmarket;
     public $price;
     public $date;
-    
+    public $url;    
     // конструктор для соединения с базой данных 
     public function __construct($db){
         $this->conn = $db;
@@ -43,7 +43,7 @@ function create(){
     $query = "INSERT INTO
                 " . $this->table_name . "
             SET
-                src=:src, product=:product, code=:code, brendmarket=:brendmarket, price=:price, date=:date";
+                src=:src, product=:product, code=:code, brendmarket=:brendmarket, url=:url, price=:price, date=:date";
 
     // подготовка запроса 
     $stmt = $this->conn->prepare($query);
@@ -55,6 +55,7 @@ function create(){
     $this->brendmarket=htmlspecialchars(strip_tags($this->brendmarket));
     $this->date=htmlspecialchars(strip_tags($this->date));
     $this->code=htmlspecialchars(strip_tags($this->code));
+     $this->code=htmlspecialchars(strip_tags($this->url));
     // привязка значений 
     $stmt->bindParam(":product", $this->product);
     $stmt->bindParam(":code", $this->code);
@@ -62,6 +63,7 @@ function create(){
     $stmt->bindParam(":price", $this->price);
     $stmt->bindParam(":date", $this->date);
     $stmt->bindParam(":src", $this->src);
+    $stmt->bindParam(":url", $this->url);
     // выполняем запрос 
     if ($stmt->execute()) {
         return true;
@@ -99,8 +101,10 @@ function readOne() {
     $this->product = $row['product'];
     $this->code = $row['code'];
     $this->brendmarket = $row['brendmarket'];
+    $this->url = $row['url'];
     $this->price = $row['price']; 
     $this->date = $row['date'];
+    
 }
 
 function update(){
@@ -114,6 +118,7 @@ function update(){
                 price = :price,
                 code = :code,
                 brendmarket = :brendmarket,
+                    url = :url,
                 date=:date
             WHERE
                 id = :id";
@@ -127,7 +132,7 @@ function update(){
     $this->description=htmlspecialchars(strip_tags($this->description));
     $this->category_id=htmlspecialchars(strip_tags($this->category_id));
     $this->id=htmlspecialchars(strip_tags($this->id));
-
+    $this->url=htmlspecialchars(strip_tags($this->url));
     // привязываем значения 
     $stmt->bindParam(':src', $this->src);
     $stmt->bindParam(':price', $this->price);
@@ -135,6 +140,7 @@ function update(){
     $stmt->bindParam(':code', $this->code);
     $stmt->bindParam(':id', $this->id);
      $stmt->bindParam(':date', $this->date);
+     $stmt->bindParam(':url', $this->url);
       $stmt->bindParam(':brendmarket', $this->brendmarket);
     // выполняем запрос 
     if ($stmt->execute()) {
@@ -174,7 +180,7 @@ function search($keywords){
             FROM
                 " . $this->table_name . "
             WHERE
-                product LIKE ? OR date LIKE ? OR id LIKE ?
+                product LIKE ? OR date LIKE ? OR id LIKE ? OR url LIKE ?
             ORDER BY
                 date DESC";
 
@@ -189,7 +195,7 @@ function search($keywords){
     $stmt->bindParam(1, $keywords);
     $stmt->bindParam(2, $keywords);
     $stmt->bindParam(3, $keywords);
-
+    $stmt->bindParam(4, $keywords);
     // выполняем запрос 
     $stmt->execute();
 
