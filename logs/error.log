@@ -13,3 +13,4 @@
 [Mon Aug 31 21:46:47.255384 2020] [php7:error] [pid 4036] [client 127.0.0.1:51646] script '/opt/lampp/htdocs/start.biz/phpmyadmin.php' not found or unable to stat
 [Mon Aug 31 21:46:58.906574 2020] [php7:error] [pid 4039] [client 127.0.0.1:51652] script '/opt/lampp/htdocs/start.biz/myadminphp.php' not found or unable to stat
 [Mon Aug 31 21:47:07.632006 2020] [php7:error] [pid 4040] [client 127.0.0.1:51654] script '/opt/lampp/htdocs/start.biz/myadmin.php' not found or unable to stat
+[Sat Sep 19 14:01:34.729943 2020] [php7:error] [pid 4381] [client 127.0.0.1:57168] script '/opt/lampp/htdocs/start.biz/read.php' not found or unable to stat

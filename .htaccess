@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteRule ^read$ product/read.php [NC]
+RewriteRule ^delete$ product/delete.php [NC]
+RewriteRule ^read_one$ product/read_one.php [NC]
+RewriteRule ^search$ product/search.php [NC]
